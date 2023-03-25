@@ -1,0 +1,33 @@
+<html>
+<head>
+<style> 
+#tx{background-color:khaki; color:blue; font-family:tahoma; font-size:24pt; border-radius:5px;}
+#hd{background-color:yellow; color:red; font-family:tahoma; border-radius:5px;}
+</style>
+<script language="javascript">
+function time()
+{
+dt=new Date() 
+
+h=dt.getHours()%12
+m=dt.getMinutes()
+s=dt.getSeconds()
+
+document.f1.t1.value=h
+document.f1.t2.value=m
+document.f1.t3.value=s
+}
+setInterval('time()', 1000)
+</script>
+</head>
+<body>
+<h1 id="hd"> Digital clock App using JavaScript </h1>
+<hr>
+<center>
+<form name=f1>
+<input type=text name=t1 size=2 id="tx"> 
+<input type=text name=t2 size=2 id="tx"> 
+<input type=text name=t3 size=2 id="tx"> 
+</form>
+</body>
+</html>
